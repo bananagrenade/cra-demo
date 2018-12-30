@@ -1,8 +1,12 @@
 import React from 'react';
 
+import BasePage from '../../layouts/BasePage/BasePage';
+
 const SecondPage = () => {
     return (
-        <h1>This is the Second Page of the app.</h1>
+        <BasePage>
+            <h1>This is the Second Page of the app.</h1>
+        </BasePage>
     );
 };
 

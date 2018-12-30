@@ -11,7 +11,7 @@ const routes = (
         <Route exact path="/" component={HomePage} />
         <Route exact path="/first" component={FirstPage} />
         <Route exact path="/second" component={SecondPage} />
-        <Route exact path="/thrid" component={ThirdPage} />
+        <Route exact path="/third" component={ThirdPage} />
     </Switch>
 );
 

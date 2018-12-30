@@ -6,7 +6,7 @@ const BasePage = (props) => {
     return (
         <div>
             <NavBar />
-            {() => props.body}
+            {props.children}
         </div>
     );
 };
