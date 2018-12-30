@@ -1,0 +1,7 @@
+.base-page__children {
+  align-items: center;
+  background-color: #282c34;
+  display: block;
+  height: 95vh;
+  overflow: auto;
+}
