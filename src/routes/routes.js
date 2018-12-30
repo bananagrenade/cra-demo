@@ -7,12 +7,12 @@ import ThirdPage from '../pages/ThirdPage/ThirdPage';
 import HomePage from '../pages/HomePage/HomePage';
 
 const routes = (
-    <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/first" component={FirstPage} />
-        <Route exact path="/second" component={SecondPage} />
-        <Route exact path="/third" component={ThirdPage} />
-    </Switch>
+  <Switch>
+    <Route exact path="/" component={HomePage} />
+    <Route exact path="/first" component={FirstPage} />
+    <Route exact path="/second" component={SecondPage} />
+    <Route exact path="/third" component={ThirdPage} />
+  </Switch>
 );
 
 export default routes;

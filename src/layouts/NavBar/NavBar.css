@@ -1,22 +1,38 @@
 .nav-bar {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    background-color: #f5f5f5;
+  align-items: center;
+  background-color: #f5f5f5;
+  display: flex;
+  height: 5vh;
 }
 
 .nav-bar-ul {
-    margin: 0;
-    padding: 0;
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar-logo {
+  animation: nav-bar-logo-spin infinite 20s linear;
+  height: 4vh;
+}
+
+@keyframes nav-bar-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .nav-bar-li {
-    display: inline-block;
-    margin-left: 20px;
+  display: inline-block;
+  margin-left: 20px;
 }
  
 .nav-bar-li a {
-    text-decoration: none;
-    font-size: 20px;
-    color: #333;
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
 }

@@ -6,9 +6,9 @@ import './index.css';
 import routes from './routes/routes';
 
 const app = (
-    <Router>
-        {routes}
-    </Router>
+  <Router>
+    {routes}
+  </Router>
 );
 
 ReactDOM.render(app, document.getElementById('root'));
