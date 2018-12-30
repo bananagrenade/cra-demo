@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 
 import NavBar from '../../layouts/NavBar/NavBar';
 import logo from './logo.svg';
-import './App.css';
+import './HomePage.css';
 
-class App extends Component {
+class HomePage extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="HomePage">
         <NavBar />
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+        <header className="HomePage-header">
+          <img src={logo} className="HomePage-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <a
-            className="App-link"
+            className="HomePage-link"
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
@@ -28,4 +28,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default HomePage;
