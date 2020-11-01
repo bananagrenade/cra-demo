@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import NavBar from '../NavBar';
+import Header from '../Header';
 
 import './BasePage.css';
 
 const BasePage = (props) => {
   return (
     <div>
-      <NavBar />
+      <Header />
       <div className="base-page__children">
         {props.children}
       </div>
@@ -15,4 +16,4 @@ const BasePage = (props) => {
   );
 };
 
-export default BasePage;
+export default memo(BasePage);

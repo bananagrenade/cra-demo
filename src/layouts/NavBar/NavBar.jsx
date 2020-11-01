@@ -1,30 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import * as routes from '../../routes/routes';
+
 import logo from './logo.svg';
 import './NavBar.css';
 
-const NavBar = () => {
+// todo: figure out hashtag-less refs
+const NavBar = (props) => {
   return (
-    <div className="nav-bar">
-      <ul className="nav-bar-ul">
-        <li>
+    <ul className="nav-bar">
+      <li className="nav-bar-li">
+        <Link to="/">
           <img src={logo} className="nav-bar-logo" alt="logo" />
-        </li>
-        <li className="nav-bar-li">
-          <Link to="/">Home</Link>
-        </li>
-        <li className="nav-bar-li">
-          <Link to="/first">First</Link>
-        </li>
-        <li className="nav-bar-li">
-          <Link to="/second">Second</Link>
-        </li>
-        <li className="nav-bar-li">
-          <Link to="/third">Third</Link>
-        </li>
-      </ul>
-    </div>
+          Home
+        </Link> 
+      </li>
+      <li className="nav-bar-li">
+        <a href="/#profile">
+          <img src={logo} className="nav-bar-logo" alt="logo" />
+          Profile
+        </a>
+      </li>
+      <li className="nav-bar-li">
+        <a href="/#projects">
+          <img src={logo} className="nav-bar-logo" alt="logo" />
+          Project
+        </a>
+      </li>
+      <li className="nav-bar-li">
+        <a href="/#contact">
+          <img src={logo} className="nav-bar-logo" alt="logo" />
+          Contact
+        </a>
+      </li>
+    </ul>
   );
 }
 

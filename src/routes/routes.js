@@ -1,17 +1,21 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import FirstPage from '../pages/FirstPage/FirstPage';
-import SecondPage from '../pages/SecondPage/SecondPage';
-import ThirdPage from '../pages/ThirdPage/ThirdPage';
+import ProfilePage from '../pages/ProfilePage/ProfilePage';
+import ProjectsPage from '../pages/ProjectsPage/ProjectsPage';
+import ContactPage from '../pages/ContactPage/ContactPage';
 import HomePage from '../pages/HomePage/HomePage';
+
+export const profilePagePath = "/profile";
+export const projectsPagePath = "/projects";
+export const contactPagePath = "/contact";
 
 const routes = (
   <Switch>
     <Route exact path="/" component={HomePage} />
-    <Route exact path="/first" component={FirstPage} />
-    <Route exact path="/second" component={SecondPage} />
-    <Route exact path="/third" component={ThirdPage} />
+    <Route exact path={profilePagePath} component={ProfilePage} />
+    <Route exact path={projectsPagePath} component={ProjectsPage} />
+    <Route exact path={contactPagePath} component={ContactPage} />
   </Switch>
 );
 

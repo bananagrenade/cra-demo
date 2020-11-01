@@ -1,29 +1,39 @@
 import React, { Component } from 'react';
 
 import BasePage from '../../layouts/BasePage';
+import Main from '../../layouts/Main';
+import Section from '../../layouts/Section';
+
 import logo from './logo.svg';
 import './HomePage.css';
 
 class HomePage extends Component {
   render() {
     return (
-      <BasePage>
-        <div className="home-page">
-          <header className="home-page__header">
-            <img src={logo} className="home-page__logo" alt="logo" />
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <a
-              className="home-page__link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </header>
-        </div>
+      <BasePage className="home-page">
+        <Section className="home-page__hero">
+          <h2>Title</h2>
+        </Section>
+        <Main className="home-page__main">
+          <Section 
+            className="home-page__section-a"
+            id="profile"
+          >
+            Profile           
+          </Section>
+          <Section
+           className="home-page__section-b"
+           id="projects"
+          >
+            Projects             
+          </Section>
+          <Section 
+            className="home-page__section-a"
+            id="contact"
+          >
+            Contact             
+          </Section>
+        </Main>
       </BasePage>
     );
   }

@@ -1,27 +1,22 @@
-.home-page {
-  text-align: center;
+.home-page__hero,
+.home-page__section-a,
+.home-page__section-b {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
 }
 
-.home-page__logo {
-  animation: HomePage-logo-spin infinite 20s linear;
-  height: 40vmin;
+.home-page__hero,
+.home-page__section-b {
+  background: aliceblue;
 }
 
-.home-page__header {
-  color: white;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
+.home-page__section-a {
+  background: snow;
 }
 
-.home-page__link {
-  color: #61dafb;
-}
-
-@keyframes HomePage-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-page__main {
+  margin-left: 300px;
 }
